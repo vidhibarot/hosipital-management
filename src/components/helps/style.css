@@ -1,0 +1,54 @@
+.help-parts-data{
+display: flex;
+justify-content: space-between;
+
+}
+.help-part1{
+    width: 100%;
+    background-color: #354895 ;
+    height: 220px;
+width: 100%;
+}
+.help-part2{
+    width: 100%;
+    background-color: #01ABEB;
+    height: 220px;
+width: 100%;
+}
+.help-content{
+    display: flex;
+}
+.part2-content{
+    color: white;
+}
+
+.appoitment{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+
+.dummytext{
+font-size: 16px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0.04em;
+text-align: left;
+
+}
+.button{
+    width: 290px;
+height: 66px;
+top: 2573px;
+left: 926px;
+gap: 0px;
+border-radius: 8px 8px 8px 8px;
+opacity: 0px;
+background-color:#354895;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
