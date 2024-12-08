@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
+import { IoReorderThreeOutline } from "react-icons/io5";
+import { AiOutlineClose } from "react-icons/ai";
 
 const Header = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
         <div className="header-part">
             <div className="main-header">
@@ -51,15 +59,35 @@ const Header = () => {
                                     <li>INTERNATIONAL PATIENT</li>
                                     <li>CONTACT</li>
                                 </ul>
+                                <div className="icon-three" onClick={toggleMenu}>
+                                    <IoReorderThreeOutline />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className={`side-menu ${isMenuOpen ? "open" : ""}`}>
+                <div className="close-icon" onClick={toggleMenu}>
+                    <AiOutlineClose />
+                </div>
+                <ul className="menu-links">
+                    <li>ABOUT</li>
+                    <li>SPECIALTIES <IoIosArrowDown className="arrow-icon" />
+                    </li>
+                    <li>SERVICES  <IoIosArrowDown className="arrow-icon" />
+                    </li>
+                    <li>DEPARTMENT</li>
+                    <li>INTERNATIONAL PATIENT</li>
+                    <li>CONTACT</li>
+                </ul>
             </div>
         </div>
     );
 };
 
 export default Header;
+
 
 
