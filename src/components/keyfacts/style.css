@@ -1,0 +1,75 @@
+.card-img-top {
+  object-fit: cover;
+  text-align: center;
+  width: 100%;
+  max-width: 60px;
+  max-height: 60px;
+  border-radius: 8px;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #354895;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.personalized_sec {
+  margin-top: 200px;
+}
+
+.personalized_sec span {
+  font-family: "Albert Sans", serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #354895;
+  text-transform: uppercase;
+}
+
+.personalized_sec h1 {
+  font-family: "Albert Sans", serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.personalized_sec button {
+  padding: 25px 36px;
+  border-radius: 12px;
+  height: 50px;
+  border: 1px solid #354895;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  color: #354895;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+}
+
+@media only screen and (max-width: 1400px) {
+  .personalized_sec {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .personalized_sec {
+    margin-top: 100px;
+  }
+}

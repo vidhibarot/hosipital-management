@@ -1,54 +1,105 @@
-.help-parts-data{
-display: flex;
-justify-content: space-between;
-
+.help-parts-data {
+  display: flex;
+  justify-content: space-between;
 }
-.help-part1{
-    width: 100%;
-    background-color: #354895 ;
-    height: 220px;
-width: 100%;
+.help-part1 {
+  width: 100%;
+  background-color: #354895;
+  width: 100%;
 }
-.help-part2{
-    width: 100%;
-    background-color: #01ABEB;
-    height: 220px;
-width: 100%;
+.help-part2 {
+  width: 100%;
+  background-color: #01abeb;
+  width: 100%;
 }
-.help-content{
-    display: flex;
+.help-content {
+  display: flex;
+  color: white;
 }
-.part2-content{
-    color: white;
-}
-
-.appoitment{
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 0.04em;
-    text-align: left;
+.part2-content {
+  color: white;
+  padding: 45px 0px 40px 50px;
 }
 
-.dummytext{
-font-size: 16px;
-font-weight: 400;
-line-height: 16px;
-letter-spacing: 0.04em;
-text-align: left;
-
-}
-.button{
-    width: 290px;
-height: 66px;
-top: 2573px;
-left: 926px;
-gap: 0px;
-border-radius: 8px 8px 8px 8px;
-opacity: 0px;
-background-color:#354895;
-display: flex;
-align-items: center;
-justify-content: center;
+.appoitment {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  margin-bottom: 10px;
 }
 
+.dummytext {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  margin-bottom: 22px;
+}
+.button {
+  width: 290px;
+  height: 66px;
+  top: 2573px;
+  left: 926px;
+  gap: 0px;
+  border-radius: 8px 8px 8px 8px;
+  opacity: 0px;
+  background-color: #354895;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.help-content .image img {
+  margin-top: 20px;
+  margin-left: 125px;
+  margin-right: 40px;
+}
+
+.help-content-data {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 20px 0px;
+}
+.paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.content-button {
+  display: flex;
+  gap: 22px;
+}
+.content-button .button {
+  width: 200px;
+  height: 48px;
+  top: 2596px;
+  left: 354px;
+  color: black;
+  gap: 0px;
+  border-radius: 8px 8px 8px 8px;
+  opacity: 0px;
+  background-color: white;
+}
+.help-span {
+  margin-left: 8px;
+}
+@media only screen and (max-width: 768px) {
+  .help-parts-data {
+    flex-wrap: wrap;
+  }
+  .help-content .image img {
+    margin-left: 0px;
+  }
+  .content-button .button {
+    width: 100px;
+    height: 25px;
+  }
+  .help-span {
+    margin-left: 2px;
+    font-size: 8px;
+  }
+}
